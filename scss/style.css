@@ -1,0 +1,565 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, strong {
+  font-family: 'Noto Serif', serif;
+}
+
+p, q, a, label, button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+header div {
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 2%;
+}
+
+header div h1 {
+  font-size: 3.5rem;
+}
+
+header div h1 span {
+  border: 1px white solid;
+  color: #D72323;
+}
+
+header div h2 {
+  font-size: 2rem;
+}
+
+header div h2 span {
+  color: #D72323;
+}
+
+header nav {
+  width: 50%;
+  padding: 2% 0;
+}
+
+header nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-transition: font-size 2s;
+  transition: font-size 2s;
+}
+
+header nav ul li a:hover {
+  color: #D72323;
+  text-decoration: underline;
+  font-size: 3.5rem;
+}
+
+.mainIndex #carouselExampleIndicators {
+  height: 600px;
+}
+
+.mainIndex .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainIndex .carousel-inner .carousel-item {
+  height: 600px;
+  background-position: center;
+}
+
+.mainIndex .carousel-inner .carousel-item img {
+  width: 100%;
+  position: relative;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mainIndex section h2 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 4rem;
+}
+
+.mainIndex .videoClass {
+  background-color: #3E3636;
+}
+
+.mainIndex .videoClass video {
+  width: 100%;
+}
+
+.mainIndex .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainIndex .imagenes div h3 {
+  text-align: center;
+}
+
+.mainIndex .imagenes div img {
+  width: 400px;
+}
+
+.mainIndex .quoteJuanPablo {
+  margin-bottom: 0;
+  padding: 10% 1%;
+  text-align: center;
+  font-size: 4rem;
+  background-color: #3E3636;
+  color: white;
+}
+
+.mainProductos {
+  background-color: #3E3636;
+}
+
+.mainProductos h1 {
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 1%;
+}
+
+.mainProductos h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  padding: 2% 0;
+  font-size: 3.5rem;
+}
+
+.mainProductos .imgProductos {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+.mainProductos .imgProductos div {
+  text-align: center;
+}
+
+.mainProductos .imgProductos img {
+  width: 300px;
+  height: 200px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  border: 3px white solid;
+  -webkit-transition: width 3s;
+  transition: width 3s;
+}
+
+.mainProductos .imgProductos img:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  width: 500px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mainNosotros {
+  background-color: #3E3636;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.mainNosotros .tituloSubtitulo {
+  text-align: left;
+  padding: 6% 2% 0 2%;
+  width: 50%;
+}
+
+.mainNosotros .tituloSubtitulo h1 {
+  font-size: 4rem;
+}
+
+.mainNosotros .tituloSubtitulo p {
+  font-size: 2.5rem;
+}
+
+.mainNosotros .videoNosotros {
+  text-align: right;
+}
+
+.mainContacto {
+  background-color: #3E3636;
+  color: white;
+}
+
+.mainContacto form {
+  text-align: center;
+  width: 50%;
+  padding: 5% 0;
+  margin: 0 auto;
+}
+
+.mainContacto form fieldset {
+  border: 1px white solid;
+}
+
+.mainContacto form fieldset legend {
+  padding-bottom: 8%;
+}
+
+.mainContacto form fieldset legend h1 {
+  text-align: center;
+  padding: 4% 0 0 0;
+  font-size: 4rem;
+}
+
+.mainContacto form fieldset legend span {
+  color: #D72323;
+}
+
+.mainContacto form fieldset .textAreaSection {
+  padding-left: 15%;
+}
+
+.mainContacto form fieldset button {
+  margin-left: 15%;
+  margin-bottom: 5%;
+  width: 30%;
+  height: 50px;
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  border: #000000 3px solid;
+}
+
+.mainContacto form fieldset button:hover {
+  color: #D72323;
+}
+
+.mainContacto form fieldset section label {
+  padding-right: 4%;
+  font-size: 2rem;
+}
+
+.mainContacto form fieldset section label span {
+  color: #D72323;
+}
+
+.mainContacto form fieldset section input {
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  height: 40px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #000000 3px solid;
+  outline: none;
+  font-size: 2rem;
+}
+
+.mainContacto form fieldset section textarea {
+  background-color: transparent;
+  color: white;
+  width: 60%;
+  height: 300px;
+  border: #000000 3px solid;
+  outline: none;
+  font-size: 2rem;
+}
+
+.mainContacto form fieldset section .emailForm {
+  padding-right: 7%;
+}
+
+.mainContacto form fieldset section .provinciaForm {
+  padding-right: 4.5%;
+}
+
+.mainContacto form fieldset section .telefonoForm {
+  padding-right: 3%;
+}
+
+footer {
+  background-color: #F5EDED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2% 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contacto ul {
+  padding-left: 0;
+}
+
+footer .contacto ul li {
+  list-style: none;
+  padding-top: 2%;
+}
+
+footer .redes ul {
+  padding-left: 23%;
+}
+
+footer .redes ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer .redes ul li a img {
+  width: 40%;
+}
+
+@media screen and (max-width: 1696px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 15%;
+  }
+  header nav ul li a {
+    font-size: 2rem;
+  }
+  header div h1 {
+    font-size: 2rem;
+  }
+  header div h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1532px) {
+  .mainIndex #carouselExampleIndicators {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .mainIndex section .imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainIndex section h2 {
+    font-size: 2rem;
+    padding-bottom: 15%;
+  }
+  .mainIndex .videoClass {
+    display: none;
+  }
+  .mainIndex .quoteJuanPablo q {
+    font-size: 2.5rem;
+  }
+  .mainIndex .quoteJuanPablo strong {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .mainProductos h1 {
+    font-size: 2.5rem;
+    padding: 10% 0;
+  }
+  .mainProductos h2 {
+    font-size: 2rem;
+  }
+  .mainProductos .imgProductos div img:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 1836px) {
+  .mainNosotros .tituloSubtitulo h1 {
+    font-size: 2.5rem;
+  }
+  .mainNosotros .tituloSubtitulo p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1690px) {
+  .mainNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainNosotros .tituloSubtitulo h1 {
+    text-align: center;
+  }
+  .mainNosotros .tituloSubtitulo p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1288px) {
+  .mainNosotros .tituloSubtitulo {
+    width: 100%;
+    padding-bottom: 15%;
+  }
+  .mainNosotros .tituloSubtitulo h1 {
+    font-size: 3rem;
+  }
+  .mainNosotros .tituloSubtitulo p {
+    font-size: 2.5rem;
+  }
+  .mainNosotros .videoNosotros {
+    text-align: center;
+  }
+  .mainNosotros .videoNosotros video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1611px) {
+  .mainContacto form fieldset legend h1 {
+    font-size: 2.5rem;
+  }
+  .mainContacto form fieldset legend p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 723px) {
+  .mainContacto form {
+    width: 100%;
+  }
+  .mainContacto form fieldset {
+    border: none;
+  }
+  .mainContacto form fieldset section label {
+    font-size: 1rem;
+  }
+  .mainContacto form fieldset section input {
+    font-size: 1rem;
+  }
+  .mainContacto form fieldset legend h1 {
+    font-size: 1.5rem;
+  }
+  .mainContacto form fieldset legend p {
+    font-size: 1rem;
+  }
+  .mainContacto form fieldset button {
+    font-size: 1rem;
+  }
+  .mainContacto form fieldset .textAreaSection {
+    padding: 0;
+  }
+  .mainContacto form fieldset .textAreaSection label {
+    padding-bottom: 5%;
+  }
+  .mainContacto form fieldset .textAreaSection textarea {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .mainContacto form fieldset button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1204px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .contacto {
+    margin-bottom: 15%;
+  }
+  footer .contacto br {
+    display: none;
+  }
+  footer .redes {
+    margin-top: 15%;
+  }
+  footer .redes ul {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
