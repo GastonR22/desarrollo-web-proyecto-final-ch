@@ -180,13 +180,9 @@ header {
       border: 3px white solid;
       transition: width 3s;
 
-      .imagenFinal{
-        flex-grow:2;
-      }
-
       &:hover {
         filter: brightness(100%);
-        width: 500px;
+        width: 400px;
         height: auto;
         position: relative;
         z-index: 1;
