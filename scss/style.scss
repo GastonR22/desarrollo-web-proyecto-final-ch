@@ -165,8 +165,7 @@ header {
     width: 100%;
     justify-content: space-around;
     margin: auto;
-    gap: 0.5%;
-
+    
     div {
       text-align: center;
     }
@@ -216,6 +215,7 @@ header {
 
   .videoNosotros {
     text-align: right;
+    margin-bottom: -0.2%;
   }
 }
 
@@ -518,6 +518,7 @@ footer {
     }
     .videoNosotros {
       text-align: center;
+      margin-bottom: -0.5%;
       video {
         width: 100%;
       }
