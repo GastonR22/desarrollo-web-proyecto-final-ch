@@ -165,7 +165,7 @@ header {
     width: 100%;
     justify-content: space-around;
     margin: auto;
-    
+
     div {
       text-align: center;
     }
@@ -179,6 +179,10 @@ header {
       filter: brightness(70%);
       border: 3px white solid;
       transition: width 3s;
+
+      .imagenFinal{
+        flex-grow:2;
+      }
 
       &:hover {
         filter: brightness(100%);

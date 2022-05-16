@@ -208,6 +208,12 @@ header nav ul li a:hover {
   transition: width 3s;
 }
 
+.mainProductos .imgProductos img .imagenFinal {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
 .mainProductos .imgProductos img:hover {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
