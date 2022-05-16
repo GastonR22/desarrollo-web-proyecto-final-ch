@@ -5,12 +5,19 @@
           box-sizing: border-box;
 }
 
-h1, h2, h3, strong {
-  font-family: 'Noto Serif', serif;
+h1,
+h2,
+h3,
+strong {
+  font-family: "Noto Serif", serif;
 }
 
-p, q, a, label, button {
-  font-family: 'Ubuntu', sans-serif;
+p,
+q,
+a,
+label,
+button {
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -37,7 +44,7 @@ header div h1 {
 
 header div h1 span {
   border: 1px white solid;
-  color: #D72323;
+  color: #d72323;
 }
 
 header div h2 {
@@ -45,7 +52,7 @@ header div h2 {
 }
 
 header div h2 span {
-  color: #D72323;
+  color: #d72323;
 }
 
 header nav {
@@ -77,7 +84,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #D72323;
+  color: #d72323;
   text-decoration: underline;
   font-size: 3.5rem;
 }
@@ -112,7 +119,7 @@ header nav ul li a:hover {
 }
 
 .mainIndex .videoClass {
-  background-color: #3E3636;
+  background-color: #3e3636;
 }
 
 .mainIndex .videoClass video {
@@ -141,12 +148,12 @@ header nav ul li a:hover {
   padding: 10% 1%;
   text-align: center;
   font-size: 4rem;
-  background-color: #3E3636;
+  background-color: #3e3636;
   color: white;
 }
 
 .mainProductos {
-  background-color: #3E3636;
+  background-color: #817676;
 }
 
 .mainProductos h1 {
@@ -165,6 +172,11 @@ header nav ul li a:hover {
   font-size: 3.5rem;
 }
 
+.mainProductos .subtituloImg {
+  text-align: center;
+  padding: 5% 0;
+}
+
 .mainProductos .imgProductos {
   color: white;
   display: -webkit-box;
@@ -176,6 +188,7 @@ header nav ul li a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: auto;
+  gap: 0.5%;
 }
 
 .mainProductos .imgProductos div {
@@ -189,8 +202,8 @@ header nav ul li a:hover {
   margin-bottom: 10%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
   border: 3px white solid;
   -webkit-transition: width 3s;
   transition: width 3s;
@@ -206,7 +219,7 @@ header nav ul li a:hover {
 }
 
 .mainNosotros {
-  background-color: #3E3636;
+  background-color: #3e3636;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +246,7 @@ header nav ul li a:hover {
 }
 
 .mainContacto {
-  background-color: #3E3636;
+  background-color: #3e3636;
   color: white;
 }
 
@@ -259,7 +272,7 @@ header nav ul li a:hover {
 }
 
 .mainContacto form fieldset legend span {
-  color: #D72323;
+  color: #d72323;
 }
 
 .mainContacto form fieldset .textAreaSection {
@@ -278,7 +291,7 @@ header nav ul li a:hover {
 }
 
 .mainContacto form fieldset button:hover {
-  color: #D72323;
+  color: #d72323;
 }
 
 .mainContacto form fieldset section label {
@@ -287,7 +300,7 @@ header nav ul li a:hover {
 }
 
 .mainContacto form fieldset section label span {
-  color: #D72323;
+  color: #d72323;
 }
 
 .mainContacto form fieldset section input {
@@ -326,7 +339,7 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-color: #F5EDED;
+  background-color: #f5eded;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,6 +351,14 @@ footer {
           align-items: center;
 }
 
+footer strong {
+  font-size: 1.5rem;
+}
+
+footer .contacto h3 {
+  padding-top: 15%;
+}
+
 footer .contacto ul {
   padding-left: 0;
 }
@@ -345,6 +366,11 @@ footer .contacto ul {
 footer .contacto ul li {
   list-style: none;
   padding-top: 2%;
+  font-size: 1.3rem;
+}
+
+footer .contacto ul li strong {
+  font-size: 1.5rem;
 }
 
 footer .redes ul {
@@ -396,7 +422,10 @@ footer .redes ul li a img {
 
 @media screen and (max-width: 1532px) {
   .mainIndex #carouselExampleIndicators {
-    display: none;
+    height: 250px;
+  }
+  .mainIndex #carouselExampleIndicators .carousel-inner .carousel-item img {
+    top: 15%;
   }
 }
 
@@ -440,6 +469,11 @@ footer .redes ul li a img {
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
     width: 375px;
+  }
+  .mainProductos .subtituloImg img {
+    width: 90%;
+    height: auto;
+    padding: 20% 0;
   }
 }
 
@@ -549,11 +583,20 @@ footer .redes ul li a img {
             align-items: center;
     text-align: center;
   }
+  footer strong {
+    font-size: 1.3rem;
+  }
   footer .contacto {
     margin-bottom: 15%;
   }
   footer .contacto br {
     display: none;
+  }
+  footer .contacto ul li {
+    font-size: 1.2rem;
+  }
+  footer .contacto ul li strong {
+    font-size: 1.3rem;
   }
   footer .redes {
     margin-top: 15%;
