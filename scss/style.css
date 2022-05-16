@@ -407,6 +407,12 @@ footer .redes ul li a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-right: 3%;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  header nav ul {
     padding-right: 15%;
   }
   header nav ul li a {
