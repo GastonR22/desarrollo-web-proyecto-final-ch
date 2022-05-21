@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Ubuntu:ital@1&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto domes & calcomanías</title>
 </head>
 
@@ -48,7 +48,7 @@
     </header>
 
     <main class="mainContacto">
-        <form action="">
+        <form action="../php/envioEmail.php" method="POST">
             <fieldset>
                 <legend>
                     <h1>Contáctanos</h1>
@@ -66,8 +66,8 @@
                 </section>
                 <br>
                 <section>
-                    <label for="telefono" class="telefonoForm">Telefono <span>*</span></label>
-                    <input type="tel" name="telefono" id="telefono" required>
+                    <label for="phone" class="telefonoForm">Teléfono <span>*</span></label>
+                    <input type="tel" name="phone" id="phone" required>
                 </section>
                 <br>
                 <section>
@@ -76,9 +76,9 @@
                 </section>
                 <br>
                 <section class="textAreaSection">
-                    <label for="mensaje">Mensaje <span>*</span></label>
+                    <label for="message">Mensaje <span>*</span></label>
                     <br>
-                    <textarea name="mensaje" id="mensaje" required></textarea>
+                    <textarea name="message" id="message" required></textarea>
                 </section>
                 <br>
                 <button type="submit">Enviar</button>
@@ -104,10 +104,10 @@
             <ul>
                 <li>
                     <a href="https://www.facebook.com/people/Domes-Calcomanias/100006795646916/" target="_blank"><img
-                            src="../img/facebookIcon.png" alt="Icono facebook">
+                            src="../multimedia/img/facebookIcon.png" alt="Icono facebook">
                 </li>
                 <li>
-                    <a href="https://wa.me/2614676522" target="_blank"><img src="../img/whatsappIcon.png"
+                    <a href="https://wa.me/2614676522" target="_blank"><img src="../multimedia/img/whatsappIcon.png"
                             alt="Icono whatsapp"></a>
                 </li>
             </ul>
