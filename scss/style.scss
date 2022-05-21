@@ -182,7 +182,7 @@ header {
 
       &:hover {
         filter: brightness(100%);
-        width: 400px;
+        width: 350px;
         height: auto;
         position: relative;
         z-index: 1;
@@ -224,14 +224,17 @@ header {
 //MAIN CONTACTO
 .mainContacto {
   background-color: #3e3636;
-  color: white;
+  color: rgb(214, 214, 214);
   form {
     text-align: center;
     width: 50%;
     padding: 5% 0;
     margin: 0 auto;
     fieldset {
-      border: 1px white solid;
+      border: 1px rgb(214, 214, 214) solid;
+      background-image: url(../multimedia/img/fondoFormulario.jpg);
+      background-size: cover;
+      background-position: bottom;
       legend {
         padding-bottom: 8%;
         h1 {
@@ -256,8 +259,8 @@ header {
         height: 50px;
         font-size: 2rem;
         background-color: transparent;
-        color: white;
-        border: #000000 3px solid;
+        color: rgb(214, 214, 214);
+        border: rgb(214, 214, 214) 3px solid;
 
         &:hover {
           color: #d72323;
@@ -274,22 +277,22 @@ header {
         }
         input {
           background-color: transparent;
-          color: white;
+          color: rgb(214, 214, 214);
           width: 50%;
           height: 40px;
           border-top: none;
           border-right: none;
           border-left: none;
-          border-bottom: #000000 3px solid;
+          border-bottom: rgb(214, 214, 214) 3px solid;
           outline: none;
           font-size: 2rem;
         }
         textarea {
           background-color: transparent;
-          color: white;
+          color: rgb(214, 214, 214);
           width: 60%;
           height: 300px;
-          border: #000000 3px solid;
+          border: rgb(214, 214, 214) 3px solid;
           outline: none;
           font-size: 2rem;
         }
@@ -365,14 +368,14 @@ footer {
 //MOBILE HEADER
 @media screen and (max-width: 1696px) {
   header {
-    flex-direction: column;
-    align-items: center;
+    align-items:center;
     nav {
       ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 3%;
+        li{
+          a{
+            font-size: 2.5rem;
+          }
+        }
       }
     }
   }
@@ -380,8 +383,13 @@ footer {
 
 @media screen and (max-width: 663px) {
   header {
+    flex-direction: column;
+    align-items: center;
     nav {
       ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-right: 15%;
         li {
           a {
@@ -417,6 +425,13 @@ footer {
         }
       }
     }
+
+    section{
+      h2{
+        margin-top: 20%;
+      }
+    }
+
   }
 }
 
@@ -544,6 +559,7 @@ footer {
   .mainContacto {
     form {
       fieldset {
+        padding: 8% 0;
         legend {
           h1 {
             font-size: 2.5rem;

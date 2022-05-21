@@ -211,7 +211,7 @@ header nav ul li a:hover {
 .mainProductos .imgProductos img:hover {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  width: 400px;
+  width: 350px;
   height: auto;
   position: relative;
   z-index: 1;
@@ -247,7 +247,7 @@ header nav ul li a:hover {
 
 .mainContacto {
   background-color: #3e3636;
-  color: white;
+  color: #d6d6d6;
 }
 
 .mainContacto form {
@@ -258,7 +258,10 @@ header nav ul li a:hover {
 }
 
 .mainContacto form fieldset {
-  border: 1px white solid;
+  border: 1px #d6d6d6 solid;
+  background-image: url(../multimedia/img/fondoFormulario.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .mainContacto form fieldset legend {
@@ -286,8 +289,8 @@ header nav ul li a:hover {
   height: 50px;
   font-size: 2rem;
   background-color: transparent;
-  color: white;
-  border: #000000 3px solid;
+  color: #d6d6d6;
+  border: #d6d6d6 3px solid;
 }
 
 .mainContacto form fieldset button:hover {
@@ -305,23 +308,23 @@ header nav ul li a:hover {
 
 .mainContacto form fieldset section input {
   background-color: transparent;
-  color: white;
+  color: #d6d6d6;
   width: 50%;
   height: 40px;
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: #000000 3px solid;
+  border-bottom: #d6d6d6 3px solid;
   outline: none;
   font-size: 2rem;
 }
 
 .mainContacto form fieldset section textarea {
   background-color: transparent;
-  color: white;
+  color: #d6d6d6;
   width: 60%;
   height: 300px;
-  border: #000000 3px solid;
+  border: #d6d6d6 3px solid;
   outline: none;
   font-size: 2rem;
 }
@@ -388,6 +391,17 @@ footer .redes ul li a img {
 
 @media screen and (max-width: 1696px) {
   header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav ul li a {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -407,12 +421,6 @@ footer .redes ul li a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 3%;
-  }
-}
-
-@media screen and (max-width: 663px) {
-  header nav ul {
     padding-right: 15%;
   }
   header nav ul li a {
@@ -432,6 +440,9 @@ footer .redes ul li a img {
   }
   .mainIndex #carouselExampleIndicators .carousel-inner .carousel-item img {
     top: 15%;
+  }
+  .mainIndex section h2 {
+    margin-top: 20%;
   }
 }
 
@@ -531,6 +542,9 @@ footer .redes ul li a img {
 }
 
 @media screen and (max-width: 1611px) {
+  .mainContacto form fieldset {
+    padding: 8% 0;
+  }
   .mainContacto form fieldset legend h1 {
     font-size: 2.5rem;
   }
