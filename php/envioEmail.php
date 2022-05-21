@@ -11,9 +11,10 @@ $contenido .= "E-mail: " . $email . ", \r\n";
 $contenido .= "Teléfono: " . $telefono . ", \r\n";
 $contenido .= "Mensaje: " . $mensaje . ", \r\n";
 
-$para = "email@mail.com";
+$para = "juanpiledda@gmail.com";
 $asunto ="Email enviado desde tu sitio web";
 
-$mail= mail($para,$asunto,$contenido);
 mail($para,$asunto,$contenido);
+header("Location: https://domescalcomanias.000webhostapp.com/html/contacto.html");
+exit;
 ?>
